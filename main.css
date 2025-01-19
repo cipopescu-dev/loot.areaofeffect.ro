@@ -1,0 +1,61 @@
+:root {
+  --bg: #191725;
+  --bg2: #22202d;
+  --txt: #f8f9f9;
+  --txt2: #a8a6b9;
+  --acc: #65f0f8;
+  --acc2: #3789df;
+  --acc3: #efc568;
+  --border: #595959;
+  --shadow: 0 0 8rem var(--acc2);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--txt);
+  font-family: Open Sans, Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+h1 {
+  color: var(--acc3);
+}
+
+h2 {
+  color: var(--acc);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  border-color: var(--border);
+}
+
+th,
+td {
+  padding: 8px;
+}
+
+th {
+  color: var(--txt);
+}
+
+[scope="col"]{
+  background-color: var(--bg2);
+}
+
+.tr1 {
+  background-color: var(--bg2);
+}
+
+hr{
+  color: var(--border)
+}
