@@ -7,6 +7,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-database.js";
 const firebaseConfig = {
   apiKey: "AIzaSyBA131MO7vGdqAxDhHWg50rJ5PIQLVMVt4",
+  // yes, this is public :)
   authDomain: "ro-areaofeffect.firebaseapp.com",
   projectId: "ro-areaofeffect",
   storageBucket: "ro-areaofeffect.firebasestorage.app",
