@@ -9,7 +9,10 @@ export default function createRow({ playerName, items }) {
     itemTd.setAttribute("scope", "row");
 
     let itemLink = document.createElement("a");
-    itemLink.setAttribute("href", `https://www.wowhead.com/item=${itemId}`);
+    itemLink.setAttribute(
+      "href",
+      `https://www.wowhead.com/classic/item=${itemId}`,
+    );
     itemTd.append(itemLink);
 
     let resetTd = document.createElement("td");
