@@ -26,11 +26,11 @@ export default async function readFirebase(path) {
         return snapshot.val();
       } else {
         console.log("No data available");
-        return [];
+        return {};
       }
     })
     .catch((error) => {
       console.error(error);
-      return [];
+      return {};
     });
 }
