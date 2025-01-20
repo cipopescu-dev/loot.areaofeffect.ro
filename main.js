@@ -9,7 +9,7 @@ console.log(attendances);
 Object.keys(loot)
   .sort(
     (playerName1, playerName2) =>
-      attendances[playerName1] > attendances[playerName2]
+      attendances[playerName1] < attendances[playerName2]
   )
   .forEach((playerName, idx) => {
     loot[playerName].sort((a, b) => a.resetNo < b.resetNo);
