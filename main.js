@@ -2,8 +2,12 @@ import createRow from "./createRow.js";
 import readFirebase from "./firebase.js";
 
 let tBody = document.querySelector(".naxxTable");
+let caption = document.querySelector("caption");
+caption.innerText = "Reading Naxxramas loot...";
 const loot = await readFirebase("/loot/Naxxramas");
+caption.innerText = "Reading attendances...";
 const attendances = await readFirebase("/attendances");
+caption.innerText = "";
 console.log(loot);
 console.log(attendances);
 Object.keys(loot)
